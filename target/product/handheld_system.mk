@@ -35,7 +35,6 @@ $(call inherit-product-if-exists, frameworks/webview/chromium/chromium.mk)
 PRODUCT_PACKAGES += \
     BasicDreams \
     BlockedNumberProvider \
-    Bluetooth \
     BluetoothMidiService \
     BookmarkProvider \
     BuiltInPrintService \
@@ -60,8 +59,10 @@ PRODUCT_PACKAGES += \
     PacProcessor \
     preinstalled-packages-platform-handheld-system.xml \
     PrintRecommendationService \
+    PrintSpooler \
     ProxyHandler \
     screenrecord \
+    SecureElement \
     SharedStorageBackup \
     SimAppDialog \
     Telecom \
