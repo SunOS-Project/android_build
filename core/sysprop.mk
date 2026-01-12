@@ -174,7 +174,7 @@ endif
 # when the target-files is signed in a post-build step.
 ifeq ($(DEFAULT_SYSTEM_DEV_CERTIFICATE),build/make/target/product/security/testkey)
 BUILD_KEYS := test-keys
-else ifneq ($(filter certs/%,$(DEFAULT_SYSTEM_DEV_CERTIFICATE)),)
+else ifneq ($(filter vendor/sun-priv/%,$(DEFAULT_SYSTEM_DEV_CERTIFICATE)),)
 BUILD_KEYS := release-keys
 else
 BUILD_KEYS := dev-keys
